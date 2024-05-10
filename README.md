@@ -9,5 +9,4 @@ when click the favorite star, if have a localstorage then save it on a page, if 
 
 Inside the modal page, we have access to  Real Name, Award Won, Acted in other movies, Philanthropic Work,Birth Date, Social Media Profile (instragram, Facebook, Twitter)
 
-API #1   https://api.disneyapi.dev/character  (Tested)
-API #2   
+API #1   https://thronesapi.com/api/v2/Characters  (Tested)

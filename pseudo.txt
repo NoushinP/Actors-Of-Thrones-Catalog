@@ -1,0 +1,19 @@
+STEP 1:
+
+Add navigation bar (favorite/Not favorite)           HTML: create the button skeleton/ JS: step 2
+Add the hero image
+Add 5 columns , 10 rows characters
+Add names of characters under each image             HTML: src(image),Name under
+create the 2nd page (favorites) / upon clicking      HTML: separate HTML page / JS: step 2
+
+
+STEP 2: JS
+Navigation buttons: Home, Favorites, About
+Character mapping
+each name to be clickable (eventListener function)
+Go to the 2nd page upon click function
+Add favorite button-Add localStorage for favorites
+
+Fetch function API (https://thronesapi.com/api/v2/Characters)
+Actors names append to the Character
+
