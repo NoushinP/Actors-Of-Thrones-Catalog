@@ -1,0 +1,77 @@
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding-right: 15 px;
+    padding-left: 15 px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-right: 50%;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+.logo a{
+    font-size: 35 px;
+    font-weight: 600;
+    color: white;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    font-size: 18 px;
+    font-weight: bold;
+
+}
+
+
+.hero {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url('../images/9894fcc5a31bd518bcb135b820afa15c4f386097_hq.jpg');
+    filter: brightness(120%) contrast(110%) saturate(200%); /* Example filter values */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('background_image.jpg') center/cover no-repeat;
+}
+
+h4{
+    text-align: center; /* Center the text */
+    padding: 0%;
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 1px 1px; /* Space between grid items */
+    padding: 0%;
+}
+
+.image-container img {
+    width: 100%; /* Ensure each image fills its grid cell */
+    height: 70%; /* Ensure each image fills its grid cell */
+    object-fit: cover; /* Maintain aspect ratio and cover entire grid cell */
+    border: 5px solid goldenrod; /* Border around each image */
+    box-sizing: border-box; /* Ensure border is included in image dimensions */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+.image-container img:hover {
+    border-color: rgb(164, 11, 191); /* Change border color on hover */
+}
