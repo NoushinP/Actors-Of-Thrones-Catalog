@@ -11,11 +11,12 @@
 
 .navdiv {
     display: flex;
-    align-items: center;
+    align-items: right;
     padding: 1%;
     margin-right: 50%;
     position: relative;
     justify-content: space-between;
+    word-spacing: 2em;
 }
 
 
@@ -39,7 +40,7 @@ li a{
 
 
 .hero {
-    height: 500px;
+    height: 650px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url('../images/9894fcc5a31bd518bcb135b820afa15c4f386097_hq.jpg');
@@ -74,4 +75,11 @@ h4{
 }
 .image-container img:hover {
     border-color: rgb(164, 11, 191); /* Change border color on hover */
+}
+
+.introduction {
+    text-align: center;
+    border: 2px solid rgb(235, 221, 221);
+    background-color: rgb(219, 83, 83);
+    color:rgb(28, 2, 32);
 }
