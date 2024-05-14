@@ -48,55 +48,6 @@ const characterMapping = {
     "Jacob Anderson": "Grey Worm",
 };
 
-// Define an array of image data
-const imageData = [
-    { name: "Robb Stark", src: "./assets/images/Robb Stark.jpg" },
-    { name: "Arya Stark", src: "./assets/images/Arya Stark.jpg" },
-    { name: "Bran Stark", src: "./assets/images/Bran Stark.jpg" },
-    { name: "Brienne of Tarth", src: "./assets/images/Brienne of Tarth.jpg" },
-    { name: "Bronn", src: "./assets/images/Bronn.jpg" },
-    { name: "Catelyn Stark", src: "./assets/images/Catelyn Stark.jpg" },
-    { name: "Cersei Lannister", src: "./assets/images/Cersei Lannister.jpg" },
-    { name: "Daario Naharis", src: "./assets/images/Daario Naharis.jpg" },
-    { name: "Daenerys Targaryen", src: "./assets/images/Daenerys Targaryen.jpg" },
-    { name: "Davos Seaworth", src: "./assets/images/Davos Seaworth.jpg" },
-    { name: "Eddard Ned Stark", src: "./assets/images/Eddard Ned Stark.jpg" },
-    { name: "Ellaria Sand", src: "./assets/images/Ellaria Sand.jpg" },
-    { name: "Gendry", src: "./assets/images/Gendry.jpg" },
-    { name: "Gilly", src: "./assets/images/Gilly.jpg" },
-    { name: "Grey Worm", src: "./assets/images/Grey Worm.jpg" },
-    { name: "High Sparrow", src: "./assets/images/High Sparrow.jpg" },
-    { name: "Jaime Lannister", src: "./assets/images/Jaime Lannister.jpg" },
-    { name: "Jaqen H ghar", src: "./assets/images/Jaqen H ghar.jpg" },
-    { name: "Jeor Mormont", src: "./assets/images/Jeor Mormont.jpg" },
-    { name: "Joffrey Baratheon", src: "./assets/images/Joffrey Baratheon.jpg" },
-    { name: "Jon Snow", src: "./assets/images/Jon Snow.jpg" },
-    { name: "Jorah Mormont", src: "./assets/images/Jorah Mormont.jpg" },
-    { name: "Khal Drogo", src: "./assets/images/khal drogo.jpg" },
-    { name: "Margaery Tyrell", src: "./assets/images/Margaery Tyrell.jpg" },
-    { name: "Melisandre", src: "./assets/images/Melisandre.jpg" },
-    { name: "Missandei", src: "./assets/images/Missandei.jpg" },
-    { name: "Petyr Littlefinger Baelish", src: "./assets/images/Petyr littlefinger Baelish.jpg" },
-    { name: "Ramsay Bolton", src: "./assets/images/Ramsay Bolton.jpg" },
-    { name: "Robert Baratheon", src: "./assets/images/Robert Baratheon.jpg" },
-    { name: "Roose Bolton", src: "./assets/images/Roose Bolton.jpg" },
-    { name: "Samwell Tarly", src: "./assets/images/Samwell Tarly.jpg" },
-    { name: "Sandor Clegane", src: "./assets/images/Sandor Clegane.jpg" },
-    { name: "Sansa Stark", src: "./assets/images/Sansa Stark.jpg" },
-    { name: "Shae", src: "./assets/images/Shae.jpg" },
-    { name: "Stannis Baratheon", src: "./assets/images/Stannis Baratheon.jpg" },
-    { name: "Talisa Maegyr", src: "./assets/images/Talisa Maegyr.jpg" },
-    { name: "Theon Greyjoy", src: "./assets/images/Theon Greyjoy.jpg" },
-    { name: "Tommen Baratheon", src: "./assets/images/Tommen Baratheon.jpg" },
-    { name: "Tormund Giantbane", src: "./assets/images/Tormund Giantbane.jpg" },
-    { name: "Tyrion Lannister", src: "./assets/images/Tyrion Lannister.jpg" },
-    { name: "Tywin Lannister", src: "./assets/images/Tywin Lannister.jpg" },
-    { name: "Varys", src: "./assets/images/Varys.jpg" },
-    { name: "Viserys Targaryen", src: "./assets/images/Viserys Targaryen.jpg" },
-    { name: "Ygritte", src: "./assets/images/Ygritte.jpg" },
-];
-
-
 // Function to create elements for each character and append to the container
 function populateCharacters() {
     const container = document.getElementById("image-container");
