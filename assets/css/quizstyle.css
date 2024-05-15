@@ -118,3 +118,13 @@ footer p {
         font-size: 0.9em;
     }
 }
+
+/* .previous {
+  align-content: center;
+  margin: 20% 10% top;
+} */
+
+.actor-name {
+  text-align: center;
+  color: gold;
+}
