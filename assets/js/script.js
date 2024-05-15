@@ -2,97 +2,109 @@ const imageContainer = document.querySelector(".image-container")
 
 
 function renderCards(characters) {
-    //- function to render the actors to card
-
-    // - create an image element
     for (const character of characters) {
-        //create imageEl
+
         const characterContainer = document.createElement("div")
         characterContainer.setAttribute('class', 'character')
         const imageEl = document.createElement("img")
         imageEl.setAttribute("src", character.imageUrl)
         characterContainer.setAttribute('data-actor', characterMapping[character.fullName])
         characterContainer.appendChild(imageEl)
-        // characterContainer .addEventListener('click', getDetails)
+        imageEl.setAttribute('data-actor', characterMapping[character.fullName])
 
 
-        //create textContent
         const nameEl = document.createElement("h4")
         nameEl.textContent = character.fullName
         characterContainer.appendChild(nameEl)
         imageContainer.appendChild(characterContainer)
 
+
+        imageEl.addEventListener('click', function (event) {
+            const actor = this.getAttribute('data-actor')
+            console.log(event)
+            const parent = event.target.parentElement
+            console.log(parent)
+            const characterName = document.createElement('h3')
+            characterName.innerText = actor
+            parent.appendChild(characterName)
+
+        })
     }
 }
 
 
 function getDetails() {
-
     const character = target.dataset.character
     console.log(character)
 }
 
-    function getApi() {
+function getApi() {
+    const requestUrl = 'https://thronesapi.com/api/v2/Characters';
 
-        const requestUrl = 'https://thronesapi.com/api/v2/Characters';
-
-        fetch(requestUrl)
-            .then(function (response) {
-                console.log('response:', response)
-                return response.json();
-            })
-            .then(function (data) {
-                console.log(data);
-                renderCards(data);
-            })
-    }
-    getApi();
-
+    fetch(requestUrl)
+        .then(function (response) {
+            console.log('response:', response)
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            renderCards(data);
+        })
+}
+getApi();
 
 
-    const characterMapping = {
+const characterMapping = {
+    "Daenerys Targaryen": "Emilia Clarke",
+    "Samwell Tarly": "John Bradley",
+    "Jon Snow": "Kit Harington",
+    "Arya Stark": "Maisie Williams",
+    "Sansa Stark": "Sophie Turner",
+    "Brandon Stark": "Isaac Hempstead Wright",
     "Ned Stark": "Sean Bean",
     "Robert Baratheon": "Mark Addy",
     "Jamie Lannister": "Nikolaj Coster-Waldau",
-    "Catelyn Stark": "Michelle Fairley",
     "Cersei Lannister": "Lena Headey",
-    "Daenerys Targaryen": "Emilia Clarke",
-    "Jorah Mormont": "Iain Glen",
-    "Viserys Targaryn": "Harry Lloyd",
-    "Jon Snow": "Kit Harington",
+    "Catelyn Stark": "Michelle Fairley",
     "Rob Stark": "Richard Madden",
-    "Sansa Stark": "Sophie Turner",
-    "Arya Stark": "Maisie Williams",
     "Theon Greyjoy": "Alfie Allen",
-    "Brandon Stark": "Isaac Hempstead Wright",
     "Joffrey Baratheon": "Jack Gleeson",
-    "The Hound": "Rory McCann",
     "Tyrion Lannister": "Peter Dinklage",
-    "Khal Drogo": "Jason Momoa",
+    "The Hound": "Rory McCann",
     "Petyr Baelish": "Aidan Gillen",
     "Davos Seaworth": "Liam Cunningham",
-    "Samwell Tarly": "John Bradley",
     "Stannis Baratheon": "Stephen Dillane",
-    "Melisandre": "Caricefree van Houten",
-    "Jeor Mormont": "James Cosmo",
-    "Bronn": "Jerome Flynn",
     "Varys": "Conleth Hill",
-    "Shae": "Sibel Kekilli",
+    "Khal Drogo": "Jason Momoa",
     "Margaery Tyrell": "Natalie Dormer",
-    "Tywin Lannister": "Charles Dance",
-    "Talisa Maegyr": "Oona Chaplin",
     "Ygritte": "Rose Leslie",
-    "Gendry Baratheon": "Joe Dempsie",
-    "Tormund Giantsbane": "Kristofer Hivju",
     "Brienne of Tarth": "Gwendoline Christie",
-    "Ramsey Bolton": "Iwan Rheon",
-    "Gilly": "Hannah Murray",
-    "Daario": "Michiel Huisman",
     "Missandei": "Nathalie Emmanuel",
-    "Tommen Baratheon": "Dean-Charles Chapman",
-    "Ellaria Sand": "Indira Varma",
-    "Jaqen H ghar": "Tom Wlaschiha",
+    "Gilly": "Hannah Murray",
+    "Viserys Targaryn": "Harry Lloyd",
+    "Rickon Stark": "Art Parkinson",
     "Roose Bolton": "Michael McElhatton",
+    "Daario": "Michiel Huisman",
+    "Shae": "Sibel Kekilli",
+    "Tommen Baratheon": "Dean-Charles Chapman",
+    "Gendry Baratheon": "Joe Dempsie",
+    "Jorah Mormont": "Iain Glen",
+    "Ramsey Bolton": "Iwan Rheon",
+    "Talisa Stark": "Oona Chaplin",
+    "Jeor Mormont": "James Cosmo",
     "The High Sparrow": "Jonathan Pryce",
-    "Grey Worm": "Jacob Anderson"
+    "Oberyn Martell": "Pedro Pascal",
+    "Melisandre": "Carice van Houten",
+    "Jaqen H'ghar": "Tom Wlaschiha",
+    "Tywin Lannister": "Charles Dance",
+    "Ellaria Sand": "Indira Varma",
+    "Tormund Giantsbane": "Kristofer Hivju",
+    "Yara Greyjoy": "Gemma Whelan",
+    "Euron Greyjoy": "Pilou Asbaek",
+    "Hodor": "Kristian Nairn",
+    "Pycelle": "Julian Glover",
+    "Grey Worm": "Jacob Anderson",
+    "Olenna Tyrell": "Diana Rigg",
+    "Qyburn": "Anton Lesser",
+    "Lord Bronn": "Jerome Flynn",
 };

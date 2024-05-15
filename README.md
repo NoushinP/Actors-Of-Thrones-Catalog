@@ -1,12 +1,14 @@
 # Actors-Of-Thrones-Catalog
 
+This project is a user interactive and enterntaining acitvity that is inspired by the Game of Thrones Series.
 
-Landing page will have the Navbar including header and favorites page, 
-under it we have 5 rows with ~10 actors picture/and images of all actors 53
-when we click on image of each actor, prompt-like page (modal-window) shows up
-we have the option to star/like the actor, 
-when click the favorite star, if have a localstorage then save it on a page, if no storage then say no favorites
+As a team, we utilized two APIs to display the data on the landing page including Characters' full name, image, and the actors' names.
+The main body of the page displays The Shirinig Stars,
+when we click on image of each actor, the real actor's name shows up under the character's name.
 
-Inside the modal page, we have access to  Real Name, Award Won, Acted in other movies, Philanthropic Work,Birth Date, Social Media Profile (instragram, Facebook, Twitter)
+Landing page includes a short and fun quiz, 
+When on the quiz page, you can continue the questions or go back to the home page.
+
+A footer is displayed at the bottom of the home page including the names of the creators.
 
 API #1   https://thronesapi.com/api/v2/Characters  (Tested)
