@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    background: crimson;
+    background: rgb(12, 12, 12);
     font-family: calibri;
     padding-right: 15 px;
     padding-left: 15 px;
@@ -15,8 +15,9 @@
     padding: 1%;
     margin-right: 50%;
     position: relative;
-    justify-content: space-between;
+    justify-content: left;
     word-spacing: 2em;
+    font-size: 200%;
 }
 
 
@@ -35,7 +36,6 @@ li a{
     color: white;
     font-size: 18 px;
     font-weight: bold;
-
 }
 
 
@@ -82,4 +82,39 @@ h4{
     border: 2px solid rgb(235, 221, 221);
     background-color: rgb(219, 83, 83);
     color:rgb(28, 2, 32);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center; 
+    padding: 20px;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 10px rgba(228, 15, 15, 0.5);
+}
+
+footer h2.para {
+    font-size: 1.5em; 
+    margin: 0; 
+}
+
+footer p {
+    font-size: 1em;
+    margin: 5px 0 0 0; 
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer h2.para {
+        font-size: 1.2em; 
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
 }
