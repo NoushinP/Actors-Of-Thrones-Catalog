@@ -17,3 +17,6 @@ Add favorite button-Add localStorage for favorites
 Fetch function API (https://thronesapi.com/api/v2/Characters)
 Actors names append to the Character
 
+how to get the real name of character out of the mapping
+
+username/actorname/
