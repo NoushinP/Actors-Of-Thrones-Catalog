@@ -10,7 +10,6 @@ function renderCards(characters) {
         imageEl.setAttribute("src", character.imageUrl)
         characterContainer.setAttribute('data-actor', characterMapping[character.fullName])
         characterContainer.appendChild(imageEl)
-        imageEl.setAttribute('data-actor', characterMapping[character.fullName])
 
 
         const nameEl = document.createElement("h4")
@@ -27,6 +26,7 @@ function renderCards(characters) {
             const characterName = document.createElement('h3')
             characterName.innerText = actor
             parent.appendChild(characterName)
+            imageEl.setAttribute('data-actor', characterMapping[character.fullName])
 
         })
     }
