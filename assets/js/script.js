@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 const imageContainer = document.querySelector(".image-container")
 
 
 function renderCards(characters) {
+=======
+// This line selects the HTML element with the class image-container and assigns it to the variable imageContainer. This element will serve as the container for all character cards.
+
+const imageContainer = document.querySelector(".image-container")
+
+//Defines a function renderCards that takes an array characters as an argument.
+
+function renderCards(characters) {
+    //Begins a loop that iterates over each character in the characters array.
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     for (const character of characters) {
 
         const characterContainer = document.createElement("div")

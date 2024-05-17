@@ -1,6 +1,12 @@
 *, *::before, *::after {
+<<<<<<< HEAD
     box-sizing: border-box;
     font-family: Gotham Rounded;
+=======
+    box-sizing:border-box;
+    font-family: calibri;
+    font-size: medium;
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
   }
   
   :root {
@@ -51,7 +57,11 @@
     background-color: hsl(var(--hue), 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
+<<<<<<< HEAD
     color: white;
+=======
+    color: rgb(56, 53, 53);
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     outline: none;
   }
   
