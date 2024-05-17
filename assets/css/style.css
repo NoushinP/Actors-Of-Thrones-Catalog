@@ -3,6 +3,7 @@
 }
 
 .navbar {
+<<<<<<< HEAD
     background: rgb(12, 12, 12);
     font-family: calibri;
     padding-right: 15 px;
@@ -18,6 +19,39 @@
     justify-content: left;
     word-spacing: 2em;
     font-size: 200%;
+=======
+    background-color: #e4adad;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .navdiv {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
 }
 
 
@@ -40,32 +74,57 @@ li a{
 
 
 .hero {
+<<<<<<< HEAD
     height: 650px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url('../images/9894fcc5a31bd518bcb135b820afa15c4f386097_hq.jpg');
     filter: brightness(120%) contrast(110%) saturate(200%); /* Example filter values */
+=======
+    height: 200px; 
+    max-width: 100%; 
+    margin-bottom: 25px;
+    background-image: url('../images/Game-of-Thrones-Poster1-e1405301281268.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    filter: brightness(100%) contrast(100%) saturate(100%);
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
 }
 
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+=======
+    color: gold;
+    font-size: 20px;
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     font-family: Arial, sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('background_image.jpg') center/cover no-repeat;
 }
 
 h4{
+<<<<<<< HEAD
     text-align: center; /* Center the text */
+=======
+    text-align: center; 
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     padding: 0%;
 }
 .image-container {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(5, 1fr); /* 5 columns */
     gap: 1px 1px; /* Space between grid items */
+=======
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1px 1px;
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     padding: 0%;
 }
 
 .image-container img {
+<<<<<<< HEAD
     width: 100%; /* Ensure each image fills its grid cell */
     height: 70%; /* Ensure each image fills its grid cell */
     object-fit: cover; /* Maintain aspect ratio and cover entire grid cell */
@@ -75,12 +134,27 @@ h4{
 }
 .image-container img:hover {
     border-color: rgb(164, 11, 191); /* Change border color on hover */
+=======
+    width: 100%; 
+    height: 70%;
+    object-fit: cover; 
+    border: 5px solid goldenrod; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+.image-container img:hover {
+    border-color: rgb(164, 11, 191); 
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
 }
 
 .introduction {
     text-align: center;
     border: 2px solid rgb(235, 221, 221);
+<<<<<<< HEAD
     background-color: rgb(219, 83, 83);
+=======
+    background-color: #dd5b5b;
+>>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     color:rgb(28, 2, 32);
 }
 
