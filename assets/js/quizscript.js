@@ -3,15 +3,12 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-
 let shuffledQuestions, currentQuestionIndex
-
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
-
 function startGame() {
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -19,12 +16,10 @@ function startGame() {
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
 }
-
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
-
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
@@ -38,7 +33,6 @@ function showQuestion(question) {
     answerButtonsElement.appendChild(button)
   })
 }
-
 function resetState() {
   clearStatusClass(document.body)
   nextButton.classList.add('hide')
@@ -46,7 +40,6 @@ function resetState() {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
 }
-
 function selectAnswer(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
@@ -61,7 +54,6 @@ function selectAnswer(e) {
     startButton.classList.remove('hide')
   }
 }
-
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -70,12 +62,10 @@ function setStatusClass(element, correct) {
     element.classList.add('wrong')
   }
 }
-
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-
 const questions = [
   {
     question: 'Which character, also known as the Lightning Lord, gets continually resurrected by Thoros of Myr after he dies??',
@@ -109,7 +99,6 @@ const questions = [
       { text: 'Rahaegal', correct: false },
       { text: 'Viserion', correct: false },
       { text: 'Balerion', correct: true }
-
     ]
   },
   {

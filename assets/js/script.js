@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-const imageContainer = document.querySelector(".image-container")
-
-
-function renderCards(characters) {
-=======
 // This line selects the HTML element with the class image-container and assigns it to the variable imageContainer. This element will serve as the container for all character cards.
-
 const imageContainer = document.querySelector(".image-container")
-
 //Defines a function renderCards that takes an array characters as an argument.
-
 function renderCards(characters) {
     //Begins a loop that iterates over each character in the characters array.
->>>>>>> db7f4853e3348cf6ddb21fe41fa63eeaf7f468d5
     for (const character of characters) {
-
         const characterContainer = document.createElement("div")
         characterContainer.setAttribute('class', 'character')
         const imageEl = document.createElement("img")
@@ -22,14 +11,10 @@ function renderCards(characters) {
         characterContainer.setAttribute('data-actor', characterMapping[character.fullName])
         characterContainer.appendChild(imageEl)
         imageEl.setAttribute('data-actor', characterMapping[character.fullName])
-
-
         const nameEl = document.createElement("h4")
         nameEl.textContent = character.fullName
         characterContainer.appendChild(nameEl)
         imageContainer.appendChild(characterContainer)
-
-
         imageEl.addEventListener('click', function (event) {
             const actor = this.getAttribute('data-actor')
             console.log(event)
@@ -38,20 +23,15 @@ function renderCards(characters) {
             const characterName = document.createElement('h3')
             characterName.innerText = actor
             parent.appendChild(characterName)
-
         })
     }
 }
-
-
 function getDetails() {
     const character = target.dataset.character
     console.log(character)
 }
-
 function getApi() {
     const requestUrl = 'https://thronesapi.com/api/v2/Characters';
-
     fetch(requestUrl)
         .then(function (response) {
             console.log('response:', response)
@@ -63,8 +43,6 @@ function getApi() {
         })
 }
 getApi();
-
-
 const characterMapping = {
     "Daenerys Targaryen": "Emilia Clarke",
     "Samwell Tarly": "John Bradley",
